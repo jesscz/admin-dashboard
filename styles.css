@@ -1,0 +1,53 @@
+:root{
+    background-color: blanchedalmond;
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 5fr;
+
+}
+#entire-left-sidebar{
+    background-color: rgb(170, 136, 93);
+    grid-row: 1 / 7;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
+}
+.left-sidebar{
+    display: grid;
+    margin-top: 20px;
+}
+.sidebar-icons{
+    filter: invert(1);
+}
+#header{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 5fr 75px 2fr;
+
+}
+#entire-search-bar{
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 30px auto;
+
+}
+#search-picture{
+    height: 25px;
+    width: 25px;
+}
+#notification-picture{
+    height: 30px;
+    width: 30px;
+}
+#icon-picture{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+}
+#icon-picture-large{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
