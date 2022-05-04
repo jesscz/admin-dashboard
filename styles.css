@@ -1,28 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 :root{
-    background-color: blanchedalmond;
+    background-color: #e4e6fa;
 }
 body{
     display: grid;
-    grid-template-rows: 1fr 5fr;
-    grid-template-columns: 1fr 5fr;
-    margin: 2px;
+    grid-template-columns: 20% 80%;
+    margin: 0px;
+    font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
 }
 #entire-left-sidebar{
-    background-color: rgb(170, 136, 93);
-    grid-row: 1 / 7;
+    background-color: #4856f4;
+    grid-row: 1 / 11;
     display: grid;
-    grid-template-rows: 1fr 6fr 3fr;
+    padding: 15px;
+}
+#main-icon{
+    height: 40px;
+    width: 40px;
+}
+#title{
+    height: 90px;
+    font-size: x-large;
 }
 .left-sidebar{
     display: grid;
-    margin-top: 20px;
 }
+#entire-left-sidebar>div>a{
+    color: white;
+    text-decoration: none;
+    max-height: 45px;
+    min-height: 45px;
+}
+#sidebar-divider{
+    min-height: 45px;
+    max-height: 45px;
+}
+
 .sidebar-icons{
     filter: invert(1);
+    height: 30px;
+    width: 30px;
+    padding-right: 8px;
+    position: relative;
+    top: 10px;
 }
 #header{
     display: grid;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     grid-template-rows: 50% 50%;
     grid-template-columns: 5fr 75px 2fr;
 
@@ -59,27 +83,47 @@ body{
 }
 #header-buttons{
     display: grid;
-    grid-template-columns: 100% 100% 100%;
+    grid-template-columns: 150% 150% 150%;
 }
+#header-buttons>button{
+    background-color: #4856f4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin: 10px;
+    height: 25px;
+    width: 80px;
+    font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
 
+}
 /*   */
 
 #main-content{
     display: grid;
     grid-template-columns: 70% 30%;
+    margin: 10px;
 }
 #projects-grid{
     display: grid;
     grid-template-rows: 10% auto;
     grid-template-columns: 50% 50%;
+    margin: 10px;
 }
 #project-title{
     grid-column: 1 / 3;
 }
 .project{
     background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 3%;
 }
 
+#announcements, #trending{
+    background-color: white;
+    height: 20px;
+}
 
 /*   */
 
